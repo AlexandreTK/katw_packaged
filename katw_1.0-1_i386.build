@@ -5,6 +5,7 @@ dpkg-buildpackage: source distribution unstable
 dpkg-buildpackage: source changed by alex <alexandretk@unknown>
  dpkg-source --before-build katw-1.0
 dpkg-buildpackage: host architecture i386
+dpkg-source: warning: unknown information field 'Standards-Version' in input data in package's section of control info file
  fakeroot debian/rules clean
 dh clean 
    dh_testdir
@@ -13,11 +14,13 @@ make[1]: Entering directory `/home/alexandretk/Downloads/katw_packaged/katw-1.0'
 make[1]: Leaving directory `/home/alexandretk/Downloads/katw_packaged/katw-1.0'
    dh_clean
  dpkg-source -b katw-1.0
+dpkg-source: warning: unknown information field 'Standards-Version' in input data in package's section of control info file
 dpkg-source: info: using source format `3.0 (quilt)'
 dpkg-source: info: building katw using existing ./katw_1.0.orig.tar.gz
 tar: Ignoring unknown extended header keyword 'hdrcharset'
 tar: Ignoring unknown extended header keyword 'hdrcharset'
 dpkg-source: info: building katw in katw_1.0-1.debian.tar.gz
+dpkg-source: warning: missing information for output field Standards-Version
 dpkg-source: info: building katw in katw_1.0-1.dsc
  debian/rules build
 dh build 
@@ -125,12 +128,15 @@ make[1]: Leaving directory `/home/alexandretk/Downloads/katw_packaged/katw-1.0'
    dh_shlibdeps
    dh_installdeb
    dh_gencontrol
+dpkg-gencontrol: warning: unknown information field 'Standards-Version' in input data in package's section of control info file
    dh_md5sums
    dh_builddeb
 dpkg-deb: building package `katw' in `../katw_1.0-1_i386.deb'.
  dpkg-genchanges  >../katw_1.0-1_i386.changes
+dpkg-genchanges: warning: unknown information field 'Standards-Version' in input data in package's section of control info file
 dpkg-genchanges: including full source code in upload
  dpkg-source --after-build katw-1.0
+dpkg-source: warning: unknown information field 'Standards-Version' in input data in package's section of control info file
 dpkg-buildpackage: full upload (original source is included)
 Now running lintian...
 E: katw changes: bad-distribution-in-changes-file unstable
@@ -224,7 +230,7 @@ W: katw source: package-needs-versioned-debhelper-build-depends 9
 E: katw source: maintainer-address-malformed alex <alexandretk@unknown>
 E: katw source: depends-on-build-essential-package-without-using-version make [build-depends: make]
 E: katw source: build-depends-on-build-essential build-depends
-W: katw source: out-of-date-standards-version 3.9.4 (current is 3.9.5)
+E: katw source: no-standards-version-field
 E: katw: embedded-library bin/katw: tinyxml
 E: katw: debian-changelog-file-contains-invalid-email-address alexandretk@unknown
 W: katw: new-package-should-close-itp-bug
@@ -236,18 +242,18 @@ E: katw: subdir-in-bin bin/data/
 E: katw: subdir-in-bin bin/data/images/
 E: katw: subdir-in-bin bin/data/levels/
 W: katw: binary-without-manpage bin/katw
-W: katw: executable-not-elf-or-script bin/data/images/katw_skeleton.png
-W: katw: executable-not-elf-or-script bin/data/images/katw_bg.png
 W: katw: executable-not-elf-or-script bin/data/images/katw_logo-cloud.png
-W: katw: executable-not-elf-or-script bin/data/images/katw_credits.png
-W: katw: executable-not-elf-or-script bin/data/images/katw_kays_a.png
-W: katw: executable-not-elf-or-script bin/data/images/katw_rock-groung.png
-W: katw: executable-not-elf-or-script bin/data/images/katw_logo-library.png
-W: katw: executable-not-elf-or-script bin/data/images/katw_blue-mage.png
-W: katw: executable-not-elf-or-script bin/data/images/katw_rock-ground.png
-W: katw: executable-not-elf-or-script bin/data/images/katw_red-mage.png
-W: katw: executable-not-elf-or-script bin/data/images/katw_necromancer.png
+W: katw: executable-not-elf-or-script bin/data/images/katw_skeleton.png
 W: katw: executable-not-elf-or-script bin/data/images/katw_logo-game.png
+W: katw: executable-not-elf-or-script bin/data/images/katw_rock-groung.png
 W: katw: executable-not-elf-or-script bin/data/levels/lvl1.tmx
+W: katw: executable-not-elf-or-script bin/data/images/katw_bg.png
+W: katw: executable-not-elf-or-script bin/data/images/katw_blue-mage.png
+W: katw: executable-not-elf-or-script bin/data/images/katw_kays_a.png
 W: katw: executable-not-elf-or-script bin/data/images/katw_logo-tools.png
+W: katw: executable-not-elf-or-script bin/data/images/katw_logo-library.png
+W: katw: executable-not-elf-or-script bin/data/images/katw_credits.png
+W: katw: executable-not-elf-or-script bin/data/images/katw_necromancer.png
+W: katw: executable-not-elf-or-script bin/data/images/katw_red-mage.png
+W: katw: executable-not-elf-or-script bin/data/images/katw_rock-ground.png
 Finished running lintian.

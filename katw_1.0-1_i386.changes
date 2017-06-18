@@ -15,17 +15,17 @@ Changes:
  .
    * Local build for GCS.
 Checksums-Sha1: 
- 2f3c44f5b8bf40027d6a27052ec6994b7f076225 987 katw_1.0-1.dsc
+ 196c187c0a18e84e77e4585db7f5d3b901074d8d 870 katw_1.0-1.dsc
  c81cd0f994a7d98d676e7982fecb9131ac1edca9 63856457 katw_1.0.orig.tar.gz
- 75f68c9f69d216df442fc96e8cfc4e80c0b6354a 1331 katw_1.0-1.debian.tar.gz
- 04f2fb8f159888fb2395db3af479df745e75461a 675472 katw_1.0-1_i386.deb
+ c5e191d4042ce615a555caf8ec3f5a0512fda616 1318 katw_1.0-1.debian.tar.gz
+ d28b3d4ba89eba5d5649e7095d13cb4d949afac7 675512 katw_1.0-1_i386.deb
 Checksums-Sha256: 
- 9955330e0dc99983c321a46fa53d9fd9e22eddc30feb1c4c8c4fe5ba6cc82129 987 katw_1.0-1.dsc
+ 2b08e48c567a4bb3941ebd6596372df90d83af3fb026fe3f47d687b934371f5c 870 katw_1.0-1.dsc
  d24a741ed163a85458663953310e551c9d6759a77d64bc98ee381a8bb8ed51d0 63856457 katw_1.0.orig.tar.gz
- 0dbbba0936ada84be898a5348c6f284f03fdbfa78ad416867870b11394c367aa 1331 katw_1.0-1.debian.tar.gz
- 66fc90cdb4ff47ce552bd552dca75c9db7f412ae26f88cf162e6f8236c7bd78c 675472 katw_1.0-1_i386.deb
+ 93986afcce908ddb50d4994a7a4fc0118ea8c883241644fa4429728f89af8024 1318 katw_1.0-1.debian.tar.gz
+ 2c31238b00d667bbc6bbc25dae6e00011343c2a177955d6843b9dfd8b6e955da 675512 katw_1.0-1_i386.deb
 Files: 
- 90cd5c288c25f93fef9a7fbc546e9021 987 unknown optional katw_1.0-1.dsc
+ 6652fa40d7d2f67514ea06892dc5833a 870 unknown optional katw_1.0-1.dsc
  89f7039436bd20813819cf5a9958682b 63856457 unknown optional katw_1.0.orig.tar.gz
- dd731d5243d77815c10691ca6ea51b54 1331 unknown optional katw_1.0-1.debian.tar.gz
- 476c0b849bbc699a7989b6554e3fafe9 675472 unknown optional katw_1.0-1_i386.deb
+ 129a2c777635ef85b9f8dcd7e03ffbe6 1318 unknown optional katw_1.0-1.debian.tar.gz
+ 658878bfc379f2842751f69453523a13 675512 unknown optional katw_1.0-1_i386.deb

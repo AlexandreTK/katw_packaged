@@ -13,14 +13,10 @@ Build-Depends: debhelper (>= 8.0.0),
                libsdl-net1.2-dev,
                libsdl-mixer1.2-dev,
                libsdl-gfx1.2-dev,
-               libc6,
-               libgcc1,
-               libsdl2-2.0-0,
-               libsdl2-image-2.0-0,
-               libstdc++6
+               zlib1g-dev
+               
 Standards-Version: 3.9.4
-Homepage: https://github.com/fgagamedev
-
+Homepage: https://github.com/fgagamedev/
 Package: katw
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
