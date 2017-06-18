@@ -242,18 +242,18 @@ E: katw: subdir-in-bin bin/data/
 E: katw: subdir-in-bin bin/data/images/
 E: katw: subdir-in-bin bin/data/levels/
 W: katw: binary-without-manpage bin/katw
+W: katw: executable-not-elf-or-script bin/data/images/katw_necromancer.png
 W: katw: executable-not-elf-or-script bin/data/images/katw_logo-cloud.png
-W: katw: executable-not-elf-or-script bin/data/images/katw_skeleton.png
-W: katw: executable-not-elf-or-script bin/data/images/katw_logo-game.png
 W: katw: executable-not-elf-or-script bin/data/images/katw_rock-groung.png
+W: katw: executable-not-elf-or-script bin/data/images/katw_red-mage.png
+W: katw: executable-not-elf-or-script bin/data/images/katw_logo-tools.png
 W: katw: executable-not-elf-or-script bin/data/levels/lvl1.tmx
-W: katw: executable-not-elf-or-script bin/data/images/katw_bg.png
+W: katw: executable-not-elf-or-script bin/data/images/katw_credits.png
 W: katw: executable-not-elf-or-script bin/data/images/katw_blue-mage.png
 W: katw: executable-not-elf-or-script bin/data/images/katw_kays_a.png
-W: katw: executable-not-elf-or-script bin/data/images/katw_logo-tools.png
+W: katw: executable-not-elf-or-script bin/data/images/katw_logo-game.png
 W: katw: executable-not-elf-or-script bin/data/images/katw_logo-library.png
-W: katw: executable-not-elf-or-script bin/data/images/katw_credits.png
-W: katw: executable-not-elf-or-script bin/data/images/katw_necromancer.png
-W: katw: executable-not-elf-or-script bin/data/images/katw_red-mage.png
+W: katw: executable-not-elf-or-script bin/data/images/katw_skeleton.png
 W: katw: executable-not-elf-or-script bin/data/images/katw_rock-ground.png
+W: katw: executable-not-elf-or-script bin/data/images/katw_bg.png
 Finished running lintian.
