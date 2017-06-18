@@ -1,0 +1,31 @@
+Format: 1.8
+Date: Sat, 17 Jun 2017 20:26:37 -0300
+Source: katw
+Binary: katw
+Architecture: source i386
+Version: 1.0-1
+Distribution: unstable
+Urgency: low
+Maintainer: alex <alexandretk@unknown>
+Changed-By: alex <alexandretk@unknown>
+Description: 
+ katw       - Katw from FGA games
+Changes: 
+ katw (1.0-1) unstable; urgency=low
+ .
+   * Local build for GCS.
+Checksums-Sha1: 
+ 5e10720588373bf5fe4c35886194e5f5a7249b88 923 katw_1.0-1.dsc
+ c81cd0f994a7d98d676e7982fecb9131ac1edca9 63856457 katw_1.0.orig.tar.gz
+ ca254a03c7a89a581a6653f33de87f8d9e4c3d99 1296 katw_1.0-1.debian.tar.gz
+ 25f565379c27854b6f069b2fd66b6dc5ebaabad1 675462 katw_1.0-1_i386.deb
+Checksums-Sha256: 
+ fc8db6372b636d1bc498ccb471132696e2fa67e1abfb5a7d2f5695d1c6f8555a 923 katw_1.0-1.dsc
+ d24a741ed163a85458663953310e551c9d6759a77d64bc98ee381a8bb8ed51d0 63856457 katw_1.0.orig.tar.gz
+ 88da13e15755625e9f8d717476972e2eab171f4075d8b9e501fe98ea80419da3 1296 katw_1.0-1.debian.tar.gz
+ 5a4bb2c7572301348f8af49f75cbe6660567c4a4f5953a8979a750390044cba4 675462 katw_1.0-1_i386.deb
+Files: 
+ 356b3f06f89677e497ef18053bbd4f05 923 unknown optional katw_1.0-1.dsc
+ 89f7039436bd20813819cf5a9958682b 63856457 unknown optional katw_1.0.orig.tar.gz
+ 7d2cafd496020425d1d8218f6e57f2bc 1296 unknown optional katw_1.0-1.debian.tar.gz
+ 3db9a85d5da60e50c3e4d4895a42530d 675462 unknown optional katw_1.0-1_i386.deb

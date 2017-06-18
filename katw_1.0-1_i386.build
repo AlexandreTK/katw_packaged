@@ -1,0 +1,253 @@
+ dpkg-buildpackage -rfakeroot -D -us -uc
+dpkg-buildpackage: source package katw
+dpkg-buildpackage: source version 1.0-1
+dpkg-buildpackage: source distribution unstable
+dpkg-buildpackage: source changed by alex <alexandretk@unknown>
+ dpkg-source --before-build katw-1.0
+dpkg-buildpackage: host architecture i386
+ fakeroot debian/rules clean
+dh clean 
+   dh_testdir
+   dh_auto_clean
+make[1]: Entering directory `/home/alexandretk/Downloads/katw_packaged/katw-1.0'
+make[1]: Leaving directory `/home/alexandretk/Downloads/katw_packaged/katw-1.0'
+   dh_clean
+ dpkg-source -b katw-1.0
+dpkg-source: info: using source format `3.0 (quilt)'
+dpkg-source: info: building katw using existing ./katw_1.0.orig.tar.gz
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+dpkg-source: info: building katw in katw_1.0-1.debian.tar.gz
+dpkg-source: info: building katw in katw_1.0-1.dsc
+ debian/rules build
+dh build 
+   dh_testdir
+   dh_auto_configure
+   dh_auto_build
+make[1]: Entering directory `/home/alexandretk/Downloads/katw_packaged/katw-1.0'
+make[2]: Entering directory `/home/alexandretk/Downloads/katw_packaged/katw-1.0'
+clang++ -c -o obj/AnimatedGraphics.o src/AnimatedGraphics.cpp -Wall -W -Wno-unused-private-field -Wno-unused-parameter -Wno-reorder -Wno-delete-non-virtual-dtor -ansi -pedantic -g -Iinclude/ -O2 `pkg-config --cflags --libs zlib` -ld `sdl2-config --cflags`
+clang: warning: -lz: 'linker' input unused
+clang: warning: -ld: 'linker' input unused
+clang++ -c -o obj/base64.o src/base64.cpp -Wall -W -Wno-unused-private-field -Wno-unused-parameter -Wno-reorder -Wno-delete-non-virtual-dtor -ansi -pedantic -g -Iinclude/ -O2 `pkg-config --cflags --libs zlib` -ld `sdl2-config --cflags`
+clang: warning: -lz: 'linker' input unused
+clang: warning: -ld: 'linker' input unused
+clang++ -c -o obj/Enemy.o src/Enemy.cpp -Wall -W -Wno-unused-private-field -Wno-unused-parameter -Wno-reorder -Wno-delete-non-virtual-dtor -ansi -pedantic -g -Iinclude/ -O2 `pkg-config --cflags --libs zlib` -ld `sdl2-config --cflags`
+clang: warning: -lz: 'linker' input unused
+clang: warning: -ld: 'linker' input unused
+clang++ -c -o obj/Game.o src/Game.cpp -Wall -W -Wno-unused-private-field -Wno-unused-parameter -Wno-reorder -Wno-delete-non-virtual-dtor -ansi -pedantic -g -Iinclude/ -O2 `pkg-config --cflags --libs zlib` -ld `sdl2-config --cflags`
+clang: warning: -lz: 'linker' input unused
+clang: warning: -ld: 'linker' input unused
+clang++ -c -o obj/GameObjectFactory.o src/GameObjectFactory.cpp -Wall -W -Wno-unused-private-field -Wno-unused-parameter -Wno-reorder -Wno-delete-non-virtual-dtor -ansi -pedantic -g -Iinclude/ -O2 `pkg-config --cflags --libs zlib` -ld `sdl2-config --cflags`
+clang: warning: -lz: 'linker' input unused
+clang: warning: -ld: 'linker' input unused
+clang++ -c -o obj/GameStateMachine.o src/GameStateMachine.cpp -Wall -W -Wno-unused-private-field -Wno-unused-parameter -Wno-reorder -Wno-delete-non-virtual-dtor -ansi -pedantic -g -Iinclude/ -O2 `pkg-config --cflags --libs zlib` -ld `sdl2-config --cflags`
+clang: warning: -lz: 'linker' input unused
+clang: warning: -ld: 'linker' input unused
+clang++ -c -o obj/InputHandler.o src/InputHandler.cpp -Wall -W -Wno-unused-private-field -Wno-unused-parameter -Wno-reorder -Wno-delete-non-virtual-dtor -ansi -pedantic -g -Iinclude/ -O2 `pkg-config --cflags --libs zlib` -ld `sdl2-config --cflags`
+clang: warning: -lz: 'linker' input unused
+clang: warning: -ld: 'linker' input unused
+clang++ -c -o obj/Level.o src/Level.cpp -Wall -W -Wno-unused-private-field -Wno-unused-parameter -Wno-reorder -Wno-delete-non-virtual-dtor -ansi -pedantic -g -Iinclude/ -O2 `pkg-config --cflags --libs zlib` -ld `sdl2-config --cflags`
+clang: warning: -lz: 'linker' input unused
+clang: warning: -ld: 'linker' input unused
+clang++ -c -o obj/LevelParser.o src/LevelParser.cpp -Wall -W -Wno-unused-private-field -Wno-unused-parameter -Wno-reorder -Wno-delete-non-virtual-dtor -ansi -pedantic -g -Iinclude/ -O2 `pkg-config --cflags --libs zlib` -ld `sdl2-config --cflags`
+clang: warning: -lz: 'linker' input unused
+clang: warning: -ld: 'linker' input unused
+clang++ -c -o obj/Main.o src/Main.cpp -Wall -W -Wno-unused-private-field -Wno-unused-parameter -Wno-reorder -Wno-delete-non-virtual-dtor -ansi -pedantic -g -Iinclude/ -O2 `pkg-config --cflags --libs zlib` -ld `sdl2-config --cflags`
+clang: warning: -lz: 'linker' input unused
+clang: warning: -ld: 'linker' input unused
+clang++ -c -o obj/MainMenuState.o src/MainMenuState.cpp -Wall -W -Wno-unused-private-field -Wno-unused-parameter -Wno-reorder -Wno-delete-non-virtual-dtor -ansi -pedantic -g -Iinclude/ -O2 `pkg-config --cflags --libs zlib` -ld `sdl2-config --cflags`
+clang: warning: -lz: 'linker' input unused
+clang: warning: -ld: 'linker' input unused
+clang++ -c -o obj/MenuButton.o src/MenuButton.cpp -Wall -W -Wno-unused-private-field -Wno-unused-parameter -Wno-reorder -Wno-delete-non-virtual-dtor -ansi -pedantic -g -Iinclude/ -O2 `pkg-config --cflags --libs zlib` -ld `sdl2-config --cflags`
+clang: warning: -lz: 'linker' input unused
+clang: warning: -ld: 'linker' input unused
+clang++ -c -o obj/MenuState.o src/MenuState.cpp -Wall -W -Wno-unused-private-field -Wno-unused-parameter -Wno-reorder -Wno-delete-non-virtual-dtor -ansi -pedantic -g -Iinclude/ -O2 `pkg-config --cflags --libs zlib` -ld `sdl2-config --cflags`
+clang: warning: -lz: 'linker' input unused
+clang: warning: -ld: 'linker' input unused
+clang++ -c -o obj/ObjectLayer.o src/ObjectLayer.cpp -Wall -W -Wno-unused-private-field -Wno-unused-parameter -Wno-reorder -Wno-delete-non-virtual-dtor -ansi -pedantic -g -Iinclude/ -O2 `pkg-config --cflags --libs zlib` -ld `sdl2-config --cflags`
+clang: warning: -lz: 'linker' input unused
+clang: warning: -ld: 'linker' input unused
+clang++ -c -o obj/PauseState.o src/PauseState.cpp -Wall -W -Wno-unused-private-field -Wno-unused-parameter -Wno-reorder -Wno-delete-non-virtual-dtor -ansi -pedantic -g -Iinclude/ -O2 `pkg-config --cflags --libs zlib` -ld `sdl2-config --cflags`
+clang: warning: -lz: 'linker' input unused
+clang: warning: -ld: 'linker' input unused
+clang++ -c -o obj/Player.o src/Player.cpp -Wall -W -Wno-unused-private-field -Wno-unused-parameter -Wno-reorder -Wno-delete-non-virtual-dtor -ansi -pedantic -g -Iinclude/ -O2 `pkg-config --cflags --libs zlib` -ld `sdl2-config --cflags`
+clang: warning: -lz: 'linker' input unused
+clang: warning: -ld: 'linker' input unused
+clang++ -c -o obj/PlayState.o src/PlayState.cpp -Wall -W -Wno-unused-private-field -Wno-unused-parameter -Wno-reorder -Wno-delete-non-virtual-dtor -ansi -pedantic -g -Iinclude/ -O2 `pkg-config --cflags --libs zlib` -ld `sdl2-config --cflags`
+clang: warning: -lz: 'linker' input unused
+clang: warning: -ld: 'linker' input unused
+clang++ -c -o obj/SDLGameObject.o src/SDLGameObject.cpp -Wall -W -Wno-unused-private-field -Wno-unused-parameter -Wno-reorder -Wno-delete-non-virtual-dtor -ansi -pedantic -g -Iinclude/ -O2 `pkg-config --cflags --libs zlib` -ld `sdl2-config --cflags`
+clang: warning: -lz: 'linker' input unused
+clang: warning: -ld: 'linker' input unused
+clang++ -c -o obj/StateParser.o src/StateParser.cpp -Wall -W -Wno-unused-private-field -Wno-unused-parameter -Wno-reorder -Wno-delete-non-virtual-dtor -ansi -pedantic -g -Iinclude/ -O2 `pkg-config --cflags --libs zlib` -ld `sdl2-config --cflags`
+clang: warning: -lz: 'linker' input unused
+clang: warning: -ld: 'linker' input unused
+clang++ -c -o obj/TextureManager.o src/TextureManager.cpp -Wall -W -Wno-unused-private-field -Wno-unused-parameter -Wno-reorder -Wno-delete-non-virtual-dtor -ansi -pedantic -g -Iinclude/ -O2 `pkg-config --cflags --libs zlib` -ld `sdl2-config --cflags`
+clang: warning: -lz: 'linker' input unused
+clang: warning: -ld: 'linker' input unused
+clang++ -c -o obj/TileLayer.o src/TileLayer.cpp -Wall -W -Wno-unused-private-field -Wno-unused-parameter -Wno-reorder -Wno-delete-non-virtual-dtor -ansi -pedantic -g -Iinclude/ -O2 `pkg-config --cflags --libs zlib` -ld `sdl2-config --cflags`
+clang: warning: -lz: 'linker' input unused
+clang: warning: -ld: 'linker' input unused
+clang++ -c -o obj/tinystr.o src/tinystr.cpp -Wall -W -Wno-unused-private-field -Wno-unused-parameter -Wno-reorder -Wno-delete-non-virtual-dtor -ansi -pedantic -g -Iinclude/ -O2 `pkg-config --cflags --libs zlib` -ld `sdl2-config --cflags`
+clang: warning: -lz: 'linker' input unused
+clang: warning: -ld: 'linker' input unused
+clang++ -c -o obj/tinyxml.o src/tinyxml.cpp -Wall -W -Wno-unused-private-field -Wno-unused-parameter -Wno-reorder -Wno-delete-non-virtual-dtor -ansi -pedantic -g -Iinclude/ -O2 `pkg-config --cflags --libs zlib` -ld `sdl2-config --cflags`
+clang: warning: -lz: 'linker' input unused
+clang: warning: -ld: 'linker' input unused
+clang++ -c -o obj/tinyxmlerror.o src/tinyxmlerror.cpp -Wall -W -Wno-unused-private-field -Wno-unused-parameter -Wno-reorder -Wno-delete-non-virtual-dtor -ansi -pedantic -g -Iinclude/ -O2 `pkg-config --cflags --libs zlib` -ld `sdl2-config --cflags`
+clang: warning: -lz: 'linker' input unused
+clang: warning: -ld: 'linker' input unused
+clang++ -c -o obj/tinyxmlparser.o src/tinyxmlparser.cpp -Wall -W -Wno-unused-private-field -Wno-unused-parameter -Wno-reorder -Wno-delete-non-virtual-dtor -ansi -pedantic -g -Iinclude/ -O2 `pkg-config --cflags --libs zlib` -ld `sdl2-config --cflags`
+clang: warning: -lz: 'linker' input unused
+clang: warning: -ld: 'linker' input unused
+clang++ -o KATW obj/AnimatedGraphics.o obj/base64.o obj/Enemy.o obj/Game.o obj/GameObjectFactory.o obj/GameStateMachine.o obj/InputHandler.o obj/Level.o obj/LevelParser.o obj/Main.o obj/MainMenuState.o obj/MenuButton.o obj/MenuState.o obj/ObjectLayer.o obj/PauseState.o obj/Player.o obj/PlayState.o obj/SDLGameObject.o obj/StateParser.o obj/TextureManager.o obj/TileLayer.o obj/tinystr.o obj/tinyxml.o obj/tinyxmlerror.o obj/tinyxmlparser.o `sdl2-config --libs` -lSDL2_image
+make[2]: Leaving directory `/home/alexandretk/Downloads/katw_packaged/katw-1.0'
+make[1]: Leaving directory `/home/alexandretk/Downloads/katw_packaged/katw-1.0'
+   dh_auto_test
+ fakeroot debian/rules binary
+dh binary 
+   dh_testroot
+   dh_prep
+   dh_auto_install
+make[1]: Entering directory `/home/alexandretk/Downloads/katw_packaged/katw-1.0'
+install -D KATW \
+		/home/alexandretk/Downloads/katw_packaged/katw-1.0/debian/katw/bin/katw
+make[1]: Leaving directory `/home/alexandretk/Downloads/katw_packaged/katw-1.0'
+   dh_installdocs
+   dh_installchangelogs
+   dh_perl
+   dh_link
+   dh_compress
+   dh_fixperms
+   dh_strip
+   dh_makeshlibs
+   dh_shlibdeps
+   dh_installdeb
+   dh_gencontrol
+   dh_md5sums
+   dh_builddeb
+dpkg-deb: building package `katw' in `../katw_1.0-1_i386.deb'.
+ dpkg-genchanges  >../katw_1.0-1_i386.changes
+dpkg-genchanges: including full source code in upload
+ dpkg-source --after-build katw-1.0
+dpkg-buildpackage: full upload (original source is included)
+Now running lintian...
+E: katw changes: bad-distribution-in-changes-file unstable
+E: katw changes: changed-by-address-malformed alex <alexandretk@unknown>
+E: katw source: source-is-missing Map_Editor/Half-Baked Editor
+E: katw source: source-is-missing Scientist_Story/Scientist Story - Refatorado
+E: katw source: source-is-missing new KATW/Scientist Story - Refatorado
+E: katw source: source-is-missing Map_Editor/obj/Debug/button.o
+E: katw source: source-is-missing Map_Editor/obj/Debug/engine.o
+E: katw source: source-is-missing Map_Editor/obj/Debug/main.o
+E: katw source: source-is-missing Map_Editor/obj/Debug/map.o
+E: katw source: source-is-missing Map_Editor/obj/Debug/tile.o
+E: katw source: source-is-missing Map_Editor/obj/Debug/util.o
+E: katw source: source-is-missing Scientist_Story/obj/Debug/GameEvent.o
+E: katw source: source-is-missing Scientist_Story/obj/Debug/animation.o
+E: katw source: source-is-missing Scientist_Story/obj/Debug/button.o
+E: katw source: source-is-missing Scientist_Story/obj/Debug/camera.o
+E: katw source: source-is-missing Scientist_Story/obj/Debug/dialoguewindow.o
+E: katw source: source-is-missing Scientist_Story/obj/Debug/effects.o
+E: katw source: source-is-missing Scientist_Story/obj/Debug/entidade.o
+E: katw source: source-is-missing Scientist_Story/obj/Debug/gameObject.o
+E: katw source: source-is-missing Scientist_Story/obj/Debug/gameState.o
+E: katw source: source-is-missing Scientist_Story/obj/Debug/gfx.o
+E: katw source: source-is-missing Scientist_Story/obj/Debug/inimigo.o
+E: katw source: source-is-missing Scientist_Story/obj/Debug/inimigoBoss.o
+E: katw source: source-is-missing Scientist_Story/obj/Debug/inimigoLastBoss.o
+E: katw source: source-is-missing Scientist_Story/obj/Debug/inputmanager.o
+E: katw source: source-is-missing Scientist_Story/obj/Debug/interfaceMenu.o
+E: katw source: source-is-missing Scientist_Story/obj/Debug/interfaces.o
+E: katw source: source-is-missing Scientist_Story/obj/Debug/itemobj.o
+E: katw source: source-is-missing Scientist_Story/obj/Debug/map.o
+E: katw source: source-is-missing Scientist_Story/obj/Debug/menuState.o
+E: katw source: source-is-missing Scientist_Story/obj/Debug/moveimage.o
+E: katw source: source-is-missing Scientist_Story/obj/Debug/npc.o
+E: katw source: source-is-missing Scientist_Story/obj/Debug/personagem.o
+E: katw source: source-is-missing Scientist_Story/obj/Debug/player.o
+E: katw source: source-is-missing Scientist_Story/obj/Debug/presentationState.o
+E: katw source: source-is-missing Scientist_Story/obj/Debug/quest.o
+E: katw source: source-is-missing Scientist_Story/obj/Debug/save.o
+E: katw source: source-is-missing Scientist_Story/obj/Debug/sdlbase.o
+E: katw source: source-is-missing Scientist_Story/obj/Debug/sound.o
+E: katw source: source-is-missing Scientist_Story/obj/Debug/sprite.o
+E: katw source: source-is-missing Scientist_Story/obj/Debug/spriteManager.o
+E: katw source: source-is-missing Scientist_Story/obj/Debug/statemanager.o
+E: katw source: source-is-missing Scientist_Story/obj/Debug/teleporte.o
+E: katw source: source-is-missing Scientist_Story/obj/Debug/text.o
+E: katw source: source-is-missing Scientist_Story/obj/Debug/tile.o
+E: katw source: source-is-missing Scientist_Story/obj/Debug/timer.o
+E: katw source: source-is-missing Scientist_Story/obj/Debug/tiro.o
+E: katw source: source-is-missing Scientist_Story/obj/Debug/vetor.o
+E: katw source: source-is-missing Scientist_Story/obj/Debug/winloseState.o
+E: katw source: source-is-missing new KATW/obj/Debug/GameEvent.o
+E: katw source: source-is-missing new KATW/obj/Debug/animation.o
+E: katw source: source-is-missing new KATW/obj/Debug/button.o
+E: katw source: source-is-missing new KATW/obj/Debug/camera.o
+E: katw source: source-is-missing new KATW/obj/Debug/dialoguewindow.o
+E: katw source: source-is-missing new KATW/obj/Debug/effects.o
+E: katw source: source-is-missing new KATW/obj/Debug/entidade.o
+E: katw source: source-is-missing new KATW/obj/Debug/gameObject.o
+E: katw source: source-is-missing new KATW/obj/Debug/gameState.o
+E: katw source: source-is-missing new KATW/obj/Debug/gfx.o
+E: katw source: source-is-missing new KATW/obj/Debug/inimigo.o
+E: katw source: source-is-missing new KATW/obj/Debug/inimigoBoss.o
+E: katw source: source-is-missing new KATW/obj/Debug/inimigoLastBoss.o
+E: katw source: source-is-missing new KATW/obj/Debug/inputmanager.o
+E: katw source: source-is-missing new KATW/obj/Debug/interfaceMenu.o
+E: katw source: source-is-missing new KATW/obj/Debug/interfaces.o
+E: katw source: source-is-missing new KATW/obj/Debug/itemobj.o
+E: katw source: source-is-missing new KATW/obj/Debug/map.o
+E: katw source: source-is-missing new KATW/obj/Debug/menuState.o
+E: katw source: source-is-missing new KATW/obj/Debug/moveimage.o
+E: katw source: source-is-missing new KATW/obj/Debug/npc.o
+E: katw source: source-is-missing new KATW/obj/Debug/personagem.o
+E: katw source: source-is-missing new KATW/obj/Debug/player.o
+E: katw source: source-is-missing new KATW/obj/Debug/presentationState.o
+E: katw source: source-is-missing new KATW/obj/Debug/quest.o
+E: katw source: source-is-missing new KATW/obj/Debug/save.o
+E: katw source: source-is-missing new KATW/obj/Debug/sdlbase.o
+E: katw source: source-is-missing new KATW/obj/Debug/sound.o
+E: katw source: source-is-missing new KATW/obj/Debug/sprite.o
+E: katw source: source-is-missing new KATW/obj/Debug/spriteManager.o
+E: katw source: source-is-missing new KATW/obj/Debug/statemanager.o
+E: katw source: source-is-missing new KATW/obj/Debug/teleporte.o
+E: katw source: source-is-missing new KATW/obj/Debug/text.o
+E: katw source: source-is-missing new KATW/obj/Debug/tile.o
+E: katw source: source-is-missing new KATW/obj/Debug/timer.o
+E: katw source: source-is-missing new KATW/obj/Debug/tiro.o
+E: katw source: source-is-missing new KATW/obj/Debug/vetor.o
+E: katw source: source-is-missing new KATW/obj/Debug/winloseState.o
+W: katw source: package-needs-versioned-debhelper-build-depends 9
+E: katw source: maintainer-address-malformed alex <alexandretk@unknown>
+E: katw source: depends-on-build-essential-package-without-using-version make [build-depends: make]
+E: katw source: build-depends-on-build-essential build-depends
+W: katw source: out-of-date-standards-version 3.9.4 (current is 3.9.5)
+E: katw: embedded-library bin/katw: tinyxml
+E: katw: debian-changelog-file-contains-invalid-email-address alexandretk@unknown
+W: katw: new-package-should-close-itp-bug
+W: katw: copyright-has-url-from-dh_make-boilerplate
+E: katw: description-starts-with-package-name
+E: katw: maintainer-address-malformed alex <alexandretk@unknown>
+E: katw: section-is-dh_make-template
+E: katw: subdir-in-bin bin/data/
+E: katw: subdir-in-bin bin/data/images/
+E: katw: subdir-in-bin bin/data/levels/
+W: katw: binary-without-manpage bin/katw
+W: katw: executable-not-elf-or-script bin/data/images/katw_kays_a.png
+W: katw: executable-not-elf-or-script bin/data/images/katw_rock-ground.png
+W: katw: executable-not-elf-or-script bin/data/images/katw_logo-game.png
+W: katw: executable-not-elf-or-script bin/data/images/katw_red-mage.png
+W: katw: executable-not-elf-or-script bin/data/images/katw_logo-library.png
+W: katw: executable-not-elf-or-script bin/data/levels/lvl1.tmx
+W: katw: executable-not-elf-or-script bin/data/images/katw_blue-mage.png
+W: katw: executable-not-elf-or-script bin/data/images/katw_logo-cloud.png
+W: katw: executable-not-elf-or-script bin/data/images/katw_credits.png
+W: katw: executable-not-elf-or-script bin/data/images/katw_logo-tools.png
+W: katw: executable-not-elf-or-script bin/data/images/katw_rock-groung.png
+W: katw: executable-not-elf-or-script bin/data/images/katw_skeleton.png
+W: katw: executable-not-elf-or-script bin/data/images/katw_bg.png
+W: katw: executable-not-elf-or-script bin/data/images/katw_necromancer.png
+Finished running lintian.
